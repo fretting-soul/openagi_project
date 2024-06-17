@@ -1,0 +1,65 @@
+/* src/App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* src/components/Header.css */
+  .header {
+    background: #282c34;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* src/components/Sidebar.css */
+  .sidebar {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* src/components/Workspace.css */
+  .workspace {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+  }
+  
+  .canvas {
+    border: 1px dashed #ccc;
+    height: 100%;
+  }
+  
+  /* src/components/ConfigPanel.css */
+  .config-panel {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  /* src/components/Footer.css */
+  .footer {
+    background: #282c34;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer button {
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 40px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  height: 100%;
+  position: fixed;
+  top: 60px; /* Adjust based on header height */
+  left: 0;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+main {
+  margin-left: 220px; /* Adjust based on sidebar width */
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+footer {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.modal, .chat-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content, .chat-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-content h2, .chat-content h2 {
+  margin-top: 0;
+}
+
+.modal-content label, .chat-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content input, .chat-content input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-content button, .chat-content button {
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+
+  
